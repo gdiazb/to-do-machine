@@ -1,0 +1,43 @@
+.todo__list-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  padding: 20px 30px;
+  line-height: 1;
+  box-shadow: 6px 6px 6px 0px rgb(0 0 0 / 10%);
+}
+
+.item__text {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.item__text-icon {
+  border: none;
+  background: transparent;
+  appearance: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.item__button {
+  cursor: pointer;
+  background-color: transparent;
+  appearance: none;
+  border: none;
+  padding: 0;
+  background-color: #d4ecfb;
+  width: 40px;
+  height: 40px;
+  line-height: 1;
+  display: inline;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.item__button:hover {
+  background-color: #ddeffa;
+}

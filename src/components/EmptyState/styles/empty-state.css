@@ -1,0 +1,16 @@
+.todo__empty-state {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 18px;
+  color: #0f5498;
+  font-size: 12px;
+  width: 300px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.todo__empty-state-img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}

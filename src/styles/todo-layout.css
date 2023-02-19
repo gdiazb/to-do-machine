@@ -1,0 +1,35 @@
+.todo-layout {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 50px 0;
+}
+
+.todo-aside {
+  position: relative;
+  background-color: #E9F4FB;
+  border-radius: 16px;
+  box-shadow: 10px 10px 22px -3px rgba(0, 0, 0, 0.3);
+  height: 500px;
+  padding: 50px 30px;
+  width: 40%;
+}
+
+.todo-aside:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 80%;
+  height: 170px;
+  background-image: url('../../public/img/task.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 30px;
+}
+
+.todo-content {
+  width: 60%;
+  padding: 30px 0;
+  margin: 0 90px;
+}
