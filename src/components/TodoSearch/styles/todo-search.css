@@ -1,4 +1,6 @@
 .todo-search__input {
   width: 80%;
   margin: 0 auto 40px;
+  border-color: #e0e0e0;
+  border-radius: 22px;
 }

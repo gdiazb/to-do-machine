@@ -1,15 +1,30 @@
 .todo-aside__title {
-  border-bottom: 1px solid #0f5498;
-  color: #0f5498;
-  display: inline-block;
+  position: relative;
+  color: #fff;
+  display: block;
   font-size: 24px;
   font-weight: 600;
-  margin: 0 auto 30px;
+  padding: 10px 30px;
+  margin: 0 -30px 50px;
+  background-color: #247cd5;
+}
+
+.todo-aside__title:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 300%;
+  height: 100%;
+  top: 0%;
+  right: 0;
+  z-index: -1;
+  background-color: #247cd5;
 }
 
 .todo-form__label {
   color: #303030;
   display: block;
+  font-weight: 600;
   margin-bottom: 6px;
 }
 

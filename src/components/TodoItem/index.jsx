@@ -11,7 +11,7 @@ function TodoItem(props) {
           className="item__text-icon"
           onClick={props.onComplete}
         >
-          {completed ? '✅' : '⏳'}
+          {completed ? '✅' : '☑️'}
         </button>
         <p>{text}</p>
       </span>

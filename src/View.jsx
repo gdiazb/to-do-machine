@@ -28,7 +28,7 @@ function View() {
         <TodoSearch />
           <TodoList>
             {error && <div className="loading"><p>Error</p></div>}
-            {loading && <div className="loading"><p>Loading</p></div>}
+            {loading && <div className="loading"><p>Cargando...</p></div>}
             {(!loading && !searchedTodos.length) && <EmptyState />}
             
             {searchedTodos.map((todo) => (
@@ -36,7 +36,7 @@ function View() {
                 id={todo.id}
                 text={todo.text}
                 completed={todo.completed}
-                key={todo.text}
+                key={todo.id}
                 onComplete={() => completeTodos(todo.id)}
                 onDelete={() => deleteTodos(todo.id)}
               />
@@ -44,7 +44,9 @@ function View() {
           </TodoList>
       </div>
       <div className="todo-aside">
-        <CreateTodoButton />
+        <div className="todo-aside__content">
+          <CreateTodoButton />
+        </div>
       </div>
     </div>
   );

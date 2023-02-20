@@ -19,9 +19,9 @@ function CreateTodoButton() {
 
   return(
     <>
-      <h3 className="todo-aside__title">Create new task</h3>
+      <h3 className="todo-aside__title">Crea una nueva tarea</h3>
       <form onSubmit={createTask}>
-        <label htmlFor="name" className="todo-form__label">Task name</label>
+        <label htmlFor="name" className="todo-form__label">Nombre de la tarea</label>
         <textarea
           value={newTodoValue}
           onChange={onWrite}
@@ -32,7 +32,7 @@ function CreateTodoButton() {
           className="todo-form__button"
           type="submit"
         >
-          Create task
+          Crear tarea
         </button>
       </form>
     </>

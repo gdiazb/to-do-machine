@@ -1,4 +1,5 @@
 import React from "react";
+import uuid from 'react-uuid';
 
 import { useLocalStorage } from "../customHooks/useLocalStorage";
 import { STORAGE_TODOS } from "../utils/constants";
@@ -33,6 +34,7 @@ function TodoProvider(props) {
     newTodos.push({
       completed: false,
       text,
+      id: uuid()
     })
     saveTodos(newTodos);
   };

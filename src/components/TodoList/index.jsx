@@ -3,9 +3,11 @@ import './styles/todo-list.css'
 
 function TodoList(props) {
   return(
-    <ul className="todo__list">
-      {props.children}
-    </ul>
+    <div className="todo__list-wrapper">
+      <ul className="todo__list">
+        {props.children}
+      </ul>
+    </div>
   )
 }
 
